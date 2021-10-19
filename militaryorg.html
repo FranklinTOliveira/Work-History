@@ -1,75 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="css/essaypage.css" rel="stylesheet" type="text/css" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Group, Rank & Other Military Terminology</title>
-</head>
+  </head>
 <body>
-<div id="container">
-<h1 id="milterm">Group, Rank & Other Military Terminology</h1>
-<h2>GENERIC MILITARY TERMINOLOGY</h2>
-<aside id="specials"><h3>Operations and Planning</h3>
-<ul><li>Tactics: Plans together with resulting operations to deploy military strengths to win battles.</li>
-<li>Strategies: Plans together with resulting operations to deploy military strengths to achieve the objectives of the war itself</li>
-<li>Grand Strategies: the same as Strategies, only extended to include political, economic, diplomatic and other factors to achieve the ends of the war</li></ul>
-    <h3>Administrative Levels</h3>
-<ul><li>High Command: top military leadership and its civilian oversight, if any</li>
-<li>Command: A high-ranking officer and his or her HQ tasked with implementing and refining strategy for multiple formations</li>
-<li>Formation: Two or more units from different arms/corps</li>
-<li>Unit: A military organization composed of soldiers from a single arm/corps</li>
-<li>Arm: Traditionally used term for a military profession</li>
-<li>Corps: Professional organization by which High Command sets standards for an Arm. Alternately, a Formation composed of two or more divisions.</ul></aside>
-<h2>COMPANY-LEVEL RANKS</h2>
-<p><b>Private:</b> A soldier enlisted into the Army based on a private enlistment contract between the soldier and his Army.</p>
-<p><b>Lance Corporal:</b> The veteran soldier serving as second-in-command to the corporal.</p>
-<p><b>Corporal:</b> The soldier in command of a squad.</p>
-<p><b>Sergeant:</b> The servant of the Captain responsible for administering enlisted infantry personnel.</p>
-<p><b>Higher Ranks of Sergeant:</b> The officers at each level of command have their own sergeants.</p>
-<p><b>Lieutenant:</b> An officer eligible to be either a placeholder for the Captain when absent or incapacitated or be the commander of a platoon.</p>
-<p><b>Captain:</b> The rank of the commander of a company developed from the vassal lords bringing their retinues into the service of superior lords.</p>
-<p><b>Company:</b> The war-band accompanying a minor war-lord/commanding officer.</p>
-<h2>REGIMENT-LEVEL RANKS & SUB-UNITS</h2>
-<p><b>Colonel/Regiment:</b> The commander of the “column” of soldiers; the officer selected by the Crown to establish an Army Organization (Regiment) to professionally organize the King’s men.</p>
-<p><b>Lieutenant Colonel:</b> This officer led the Colonel’s cavalry, served him as his second-in-command and would be his placeholder, should he be absent or incapacitated.</p>
-<p><b>Battalion:</b> When the Lieutenant Colonel was not serving in the above capacity, he was assigned command of a Regiment Task Force for battle called the Battalion.</p>
-<p><b>Sergeant Major/Major/Commandant:</b> The highest rank of sergeant was reserved for sergeants serving the organizational center for the King’s military campaigns that was the Regimental Headquarters. Even sergeants serving higher headquarters were not promoted further, given the prestige of the Regimental Headquarters in maintaining organization and professionalism amongst enlisted personnel.</p>
-<p>As commissions became a privilege of the aristocracy, a separate commissioned rank of Major assumed command of the Regiment’s Officer Corps. This arrangement was altered in the French Army where a political officer representing the Crown known as the Commandant performed a similar function through his control of the Regiment’s base(s).</p>
-<h2>FORMATIONS & GENERALS</h2>
+<div class="container">
+  <div class="page-wrapper row pt-4 toggled">
+    <nav id="sidebar" class="col-4 sidebar-wrapper">
+      <div class="sidebar-menu">  
+        <button type="button" class="bg-white collapsible">Index</button>
+        <div class="content">
+          <ul class="list-group">
+            <li class="list-group-item border-0">
+              <button type="button" class="bg-white collapsible">Early Sites</button>
+              <div class="content">
+                <ul class="list-group border-0">
+                  <li class="list-group-item border-0">
+                    <a href="personalmusings.html" class="text-black text-decoration-none">Personal Musings</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="plans.html" class="text-black text-decoration-none">Plans</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="thiswebdeveloper.html" class="text-black text-decoration-none">This Web Developer</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item border-0"> 
+              <button type="button" class="bg-white collapsible">Research Essays</button>
+              <div class="content">
+                <ul class="list-group border-0">
+                  <li class="list-group-item border-0">
+                    <a href="armenialifesecret.html" class="text-black text-decoration-none">Armenia Life Secret</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="britorigin.html" class="text-black text-decoration-none">British Origins</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="frenchfactions.html" class="text-black text-decoration-none">French Factions</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="iranfall.html" class="text-black text-decoration-none">The Fall of Iran</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="mandateend.html" class="text-black text-decoration-none">End of Palestine Mandate</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="militaryorg.html" class="text-black text-decoration-none">Military Organization</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="petrostatecrisis.html" class="text-black text-decoration-none">Petrostate Crisis</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="powervertical.html" class="text-black text-decoration-none">The Vertical of Power</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="readmission.html" class="text-black text-decoration-none">Readmission of the South</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="religionhistory.html" class="text-black text-decoration-none">The History of Religion</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="restructuringunion.html" class="text-black text-decoration-none">Restructuring the Union</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="unaccountablecongress.html" class="text-black text-decoration-none">Unaccountable Congress</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>      
+        </div>
+      </div>    
+    </nav>
+    <div class="col-8">
+      <div id="container">
+        <h1 id="milterm">Group, Rank & Other Military Terminology</h1>
+        <h2>GENERIC MILITARY TERMINOLOGY</h2>
+        <aside id="specials"><h3>Operations and Planning</h3>
+        <ul><li>Tactics: Plans together with resulting operations to deploy military strengths to win battles.</li>
+        <li>Strategies: Plans together with resulting operations to deploy military strengths to achieve the objectives of the war itself</li>
+        <li>Grand Strategies: the same as Strategies, only extended to include political, economic, diplomatic and other factors to achieve the ends of the war</li></ul>
+            <h3>Administrative Levels</h3>
+        <ul><li>High Command: top military leadership and its civilian oversight, if any</li>
+        <li>Command: A high-ranking officer and his or her HQ tasked with implementing and refining strategy for multiple formations</li>
+        <li>Formation: Two or more units from different arms/corps</li>
+        <li>Unit: A military organization composed of soldiers from a single arm/corps</li>
+        <li>Arm: Traditionally used term for a military profession</li>
+        <li>Corps: Professional organization by which High Command sets standards for an Arm. Alternately, a Formation composed of two or more divisions.</ul></aside>
+        <h2>COMPANY-LEVEL RANKS</h2>
+        <p><b>Private:</b> A soldier enlisted into the Army based on a private enlistment contract between the soldier and his Army.</p>
+        <p><b>Lance Corporal:</b> The veteran soldier serving as second-in-command to the corporal.</p>
+        <p><b>Corporal:</b> The soldier in command of a squad.</p>
+        <p><b>Sergeant:</b> The servant of the Captain responsible for administering enlisted infantry personnel.</p>
+        <p><b>Higher Ranks of Sergeant:</b> The officers at each level of command have their own sergeants.</p>
+        <p><b>Lieutenant:</b> An officer eligible to be either a placeholder for the Captain when absent or incapacitated or be the commander of a platoon.</p>
+        <p><b>Captain:</b> The rank of the commander of a company developed from the vassal lords bringing their retinues into the service of superior lords.</p>
+        <p><b>Company:</b> The war-band accompanying a minor war-lord/commanding officer.</p>
+        <h2>REGIMENT-LEVEL RANKS & SUB-UNITS</h2>
+        <p><b>Colonel/Regiment:</b> The commander of the “column” of soldiers; the officer selected by the Crown to establish an Army Organization (Regiment) to professionally organize the King’s men.</p>
+        <p><b>Lieutenant Colonel:</b> This officer led the Colonel’s cavalry, served him as his second-in-command and would be his placeholder, should he be absent or incapacitated.</p>
+        <p><b>Battalion:</b> When the Lieutenant Colonel was not serving in the above capacity, he was assigned command of a Regiment Task Force for battle called the Battalion.</p>
+        <p><b>Sergeant Major/Major/Commandant:</b> The highest rank of sergeant was reserved for sergeants serving the organizational center for the King’s military campaigns that was the Regimental Headquarters. Even sergeants serving higher headquarters were not promoted further, given the prestige of the Regimental Headquarters in maintaining organization and professionalism amongst enlisted personnel.</p>
+        <p>As commissions became a privilege of the aristocracy, a separate commissioned rank of Major assumed command of the Regiment’s Officer Corps. This arrangement was altered in the French Army where a political officer representing the Crown known as the Commandant performed a similar function through his control of the Regiment’s base(s).</p>
+        <h2>FORMATIONS & GENERALS</h2>
+        
+        <aside id="specials"><h3>Army Organizational Systems</h3>
+        <p>Just as the European armies of the Age of Exploration had the Regiments as the organizational units to be assembled into Brigades when mobilizing reinforcements, so in the French Revolution and its aftermath, the Division became for High Command the Army organization to be assembled into Corps when mobilizing reinforcements. Then the Division Commander was the Major General and the Corps Commander was one of the senior-most Army officers. Thereafter a difference in military organization emerged between the British system and the Continental system with regard to which level of army commanders were responsible for recruiting, training, and administration--in the British system, regiments possess that responsibility and are assembled into brigades for combat; in the Continental system, divisions possess that responsibility and are assembled into corps for combat. In both systems, the war is fought at the field army level of command by moving divisions to the corps that can best exploit vulnerable positions in the enemy lines.</p>
+        
+        <h3>Brigade/Brigadier (General)</h3>
+        <p>As armies acquired more regiments, regiments from different arms were combined into task forces called brigades. The commander of the brigade was the Brigadier General. In modern times, the equivalent rank is sometimes a staff officer called Brigadier with the brigades being only a little larger in numbers than regiments.</p>
+        <p>German and Russian armies at various times lacked ranks of Brigadier General and/or a General/General of the Service Arm. When only Brigadier General was missing, the rank of Colonel General was the four-star rank. When General of the Service Arm was missing, Colonel General was a three-star rank and the four-star rank was Army General so called because he qualified for command of a Field Army.</p>
+        
+        <h3>Earliest Structure of the Field Army</h3>
+        <p>The earliest structure of the field army, a very large, combined arms formation, duplicated the structure of the company with:</p>
+        <ol><li><b>Captain General:</b>Just as a Lord was Captain of his armed vassals, the King was Captain General of the Field Army formed by mobilizing the armed retinues of his vassal lords.</li>
+        <li><b>Lieutenant General:</b>Just as the Lord had a 2nd in command/place-holding officer positioned within the Company he commanded, so the King assigned a similar role in his Field Armies to officers he commissioned as Lieutenant Generals.</li>
+        <li><b>Major General:</b>Just as the top two of a Company/Regiment delegated management of the enlisted infantry to a Sergeant/Sergeant Major, so such management in the Field Army went to an officer bearing the rank title of Sergeant Major General. This rank was broken into two parts over time—the enlisted infantry were placed under the command of a Sergeant Major for the Field Army while the cavalry and officers were placed under a Major General.</li></ol>
+        
+        <h3>A New Rank for the Command of the Field Army</h3>
+        <p>The commander of a formation or of the State’s Army is the Commander-in-Chief. As the Commander-in-Chief of his own army, the King held an officer’s commission as Captain General. At times, his Queen or an especially trusted officer would also be commissioned at such a lofty rank. However, as the 17th century changed into the 18th, kings increasingly reserved the rank for themselves.</p>
+        <p>Instead they commissioned their most trusted officers as Generals within their service arms (usually Generals of Foot or Generals of Horse). Soon such commissions were standardized as the rank of General though to this day, German generals have their service arms incorporated into their rank titles. Within the Field Army, whether it was a German Field Army or otherwise, the generic General rank, or else its equivalent General rank incorporating a corps (arms) affiliation, was the rank of the officer that tended to replace the King as the Commander-in-Chief of the Field Army.</p>
+        
+        <h3>Field Armies and Army Groups</h3>
+        <p>The King had many men ready to fight for him and those he directed to the battlefield to fight for him formed a Field Army. The commanding officers of the Field Army devised the strategy of the war and mobilized the soldiers. Such commands were valuable assets to duplicate and so each side would assign a region each for the operations of every Field Army. As each State acquired a larger army as the 19th Century became the 20th, such commands on their own were only a fraction of the soldiers mobilized by a large State when instituting mass conscription. Thus a higher level of Formation Command, the Army Group HQ, was established to command a group of Field Armies referred to plainly as an Army Group. With an Army Group containing multiple Field Armies and a Field Army containing multiple Corps, a Lieutenant General assigned command of a Field Army was bound to be promoted to General if effective while a General assigned command of an Army Group was bound to be promoted to Field Marshal if effective in battle.</p>
+        
+        <h3>The King's Marshals and Generalissimos</h3>
+        <p>The king’s horses were managed by his marshal. Control of the horses brought control over the leading men. Thus the Marshal of the Realm was the Protocol Officer at the Royal Court and the Commander of the Cavalry in the King’s Army. Units within the Army also had a Field Marshal to carry out such administrative duties. As officers’ ranks became fixed by royal commission, Field Marshal became the rank of an aristocratic cavalry commander. As European armies grew, the rank of Field Marshal rose from denoting the senior-most officer of a brigade to the senior-most officer of all the King’s men. An exception was when the King ceded his prerogatives as Commander-in-Chief to an especially trusted officer commissioned with the rank of Generalissimo. As Commander-in-Chief, the Generalissimo is considered an “infinite-star” general; when the rank above Field Marshal is instead thought as a six-star general, it is often denoted as Marshal of the Realm or Grand Marshal (outside royal courts, Grand Marshals are the honorary Protocol Officers and thus at the head of parades). Thus the corps and field armies of the Napoleonic era had commanders whose standard rank started as Lieutenant General, became General after accumulating seniority and rose to Field Marshal after achieving major victories.</p></aside>
+        
+        <h2>NAVY RANKS</h2>
+        <p>The naval soldiers were referred to as Seamen. A Seaman after passing through training ranks was formally ranked as a Seaman. Furthermore promotions put Seamen through various ranks of Petty Officer and Chief Petty Officer. Above these enlisted personnel, the commissioned officer after completing training as a Midshipman (Naval Cadet) started his career attending to the ship’s ensign (a State’s naval flag) and thus had the commissioned rank of Ensign. The earliest medieval navies would have a Lord as the Captain of a warship and his chief assistant as Lieutenant. As ships grew bigger with bigger crews, the command ranks of Lieutenant and Captain were elaborated on as such:</p>
+        <aside id="specials"><p>Command of a ship went to:</p>
+        <ol><li>A Captain when large</li>
+            <li>Commander when not so large</li></ol>
+        <p>Senior administrative staff were Lieutenants and higher-rated ships had more lieutenants. Naval lieutenants were ranked as:</p>
+        <ol><li>Lieutenant-Commanders (who could also command the smallest warships thus the rank title</li>
+            <li>Lieutenants</li>
+            <li>Sub-lieutenants</li></ol></aside>
+            <footer id="footer"><h3>&copy; Franklin Oliveira (<a href="&#102;&#114;&#97;&#110;&#107;&#108;&#105;&#110;&#103;&#116;&#111;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#107;&#108;&#105;&#110;&#103;&#116;&#111;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a>) 2017<script>new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());</script></h3></footer>
+        </div>
+  </div>
+</div>      
+    <!-- Custom JavaScript -->
 
-<aside id="specials"><h3>Army Organizational Systems</h3>
-<p>Just as the European armies of the Age of Exploration had the Regiments as the organizational units to be assembled into Brigades when mobilizing reinforcements, so in the French Revolution and its aftermath, the Division became for High Command the Army organization to be assembled into Corps when mobilizing reinforcements. Then the Division Commander was the Major General and the Corps Commander was one of the senior-most Army officers. Thereafter a difference in military organization emerged between the British system and the Continental system with regard to which level of army commanders were responsible for recruiting, training, and administration--in the British system, regiments possess that responsibility and are assembled into brigades for combat; in the Continental system, divisions possess that responsibility and are assembled into corps for combat. In both systems, the war is fought at the field army level of command by moving divisions to the corps that can best exploit vulnerable positions in the enemy lines.</p>
+    <script src="js/script.js"></script>
 
-<h3>Brigade/Brigadier (General)</h3>
-<p>As armies acquired more regiments, regiments from different arms were combined into task forces called brigades. The commander of the brigade was the Brigadier General. In modern times, the equivalent rank is sometimes a staff officer called Brigadier with the brigades being only a little larger in numbers than regiments.</p>
-<p>German and Russian armies at various times lacked ranks of Brigadier General and/or a General/General of the Service Arm. When only Brigadier General was missing, the rank of Colonel General was the four-star rank. When General of the Service Arm was missing, Colonel General was a three-star rank and the four-star rank was Army General so called because he qualified for command of a Field Army.</p>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-<h3>Earliest Structure of the Field Army</h3>
-<p>The earliest structure of the field army, a very large, combined arms formation, duplicated the structure of the company with:</p>
-<ol><li><b>Captain General:</b>Just as a Lord was Captain of his armed vassals, the King was Captain General of the Field Army formed by mobilizing the armed retinues of his vassal lords.</li>
-<li><b>Lieutenant General:</b>Just as the Lord had a 2nd in command/place-holding officer positioned within the Company he commanded, so the King assigned a similar role in his Field Armies to officers he commissioned as Lieutenant Generals.</li>
-<li><b>Major General:</b>Just as the top two of a Company/Regiment delegated management of the enlisted infantry to a Sergeant/Sergeant Major, so such management in the Field Army went to an officer bearing the rank title of Sergeant Major General. This rank was broken into two parts over time—the enlisted infantry were placed under the command of a Sergeant Major for the Field Army while the cavalry and officers were placed under a Major General.</li></ol>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-<h3>A New Rank for the Command of the Field Army</h3>
-<p>The commander of a formation or of the State’s Army is the Commander-in-Chief. As the Commander-in-Chief of his own army, the King held an officer’s commission as Captain General. At times, his Queen or an especially trusted officer would also be commissioned at such a lofty rank. However, as the 17th century changed into the 18th, kings increasingly reserved the rank for themselves.</p>
-<p>Instead they commissioned their most trusted officers as Generals within their service arms (usually Generals of Foot or Generals of Horse). Soon such commissions were standardized as the rank of General though to this day, German generals have their service arms incorporated into their rank titles. Within the Field Army, whether it was a German Field Army or otherwise, the generic General rank, or else its equivalent General rank incorporating a corps (arms) affiliation, was the rank of the officer that tended to replace the King as the Commander-in-Chief of the Field Army.</p>
-
-<h3>Field Armies and Army Groups</h3>
-<p>The King had many men ready to fight for him and those he directed to the battlefield to fight for him formed a Field Army. The commanding officers of the Field Army devised the strategy of the war and mobilized the soldiers. Such commands were valuable assets to duplicate and so each side would assign a region each for the operations of every Field Army. As each State acquired a larger army as the 19th Century became the 20th, such commands on their own were only a fraction of the soldiers mobilized by a large State when instituting mass conscription. Thus a higher level of Formation Command, the Army Group HQ, was established to command a group of Field Armies referred to plainly as an Army Group. With an Army Group containing multiple Field Armies and a Field Army containing multiple Corps, a Lieutenant General assigned command of a Field Army was bound to be promoted to General if effective while a General assigned command of an Army Group was bound to be promoted to Field Marshal if effective in battle.</p>
-
-<h3>The King's Marshals and Generalissimos</h3>
-<p>The king’s horses were managed by his marshal. Control of the horses brought control over the leading men. Thus the Marshal of the Realm was the Protocol Officer at the Royal Court and the Commander of the Cavalry in the King’s Army. Units within the Army also had a Field Marshal to carry out such administrative duties. As officers’ ranks became fixed by royal commission, Field Marshal became the rank of an aristocratic cavalry commander. As European armies grew, the rank of Field Marshal rose from denoting the senior-most officer of a brigade to the senior-most officer of all the King’s men. An exception was when the King ceded his prerogatives as Commander-in-Chief to an especially trusted officer commissioned with the rank of Generalissimo. As Commander-in-Chief, the Generalissimo is considered an “infinite-star” general; when the rank above Field Marshal is instead thought as a six-star general, it is often denoted as Marshal of the Realm or Grand Marshal (outside royal courts, Grand Marshals are the honorary Protocol Officers and thus at the head of parades). Thus the corps and field armies of the Napoleonic era had commanders whose standard rank started as Lieutenant General, became General after accumulating seniority and rose to Field Marshal after achieving major victories.</p></aside>
-
-<h2>NAVY RANKS</h2>
-<p>The naval soldiers were referred to as Seamen. A Seaman after passing through training ranks was formally ranked as a Seaman. Furthermore promotions put Seamen through various ranks of Petty Officer and Chief Petty Officer. Above these enlisted personnel, the commissioned officer after completing training as a Midshipman (Naval Cadet) started his career attending to the ship’s ensign (a State’s naval flag) and thus had the commissioned rank of Ensign. The earliest medieval navies would have a Lord as the Captain of a warship and his chief assistant as Lieutenant. As ships grew bigger with bigger crews, the command ranks of Lieutenant and Captain were elaborated on as such:</p>
-<aside id="specials"><p>Command of a ship went to:</p>
-<ol><li>A Captain when large</li>
-    <li>Commander when not so large</li></ol>
-<p>Senior administrative staff were Lieutenants and higher-rated ships had more lieutenants. Naval lieutenants were ranked as:</p>
-<ol><li>Lieutenant-Commanders (who could also command the smallest warships thus the rank title</li>
-    <li>Lieutenants</li>
-    <li>Sub-lieutenants</li></ol></aside>
-    <footer id="footer"><h3>&copy; Franklin Oliveira (<a href="&#102;&#114;&#97;&#110;&#107;&#108;&#105;&#110;&#103;&#116;&#111;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#107;&#108;&#105;&#110;&#103;&#116;&#111;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a>) 2017<script>new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());</script></h3></footer>
-</div>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
+              
